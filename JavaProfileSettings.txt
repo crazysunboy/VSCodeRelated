@@ -1,0 +1,144 @@
+{
+  // General UI & Window Settings
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+  "window.commandCenter": false,
+
+  // Explorer Settings
+  "explorer.excludeGitIgnore": false,
+  "explorer.autoReveal": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // Workbench Layout & Themes
+  "workbench.colorTheme": "Dark+",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.useSplitJSON": true,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+
+  // Base Editor & Files Behavior
+  "editor.inlineSuggest.enabled": true,
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontWeight": "500",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestionsDelay": 100,
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 4,
+
+  // Debug & Terminal Blocks
+  "debug.console.fontFamily": "Source Code Pro",
+  "debug.toolBarLocation": "docked",
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.hideCondition": "never",
+  "terminal.integrated.tabs.location": "right",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "terminal.integrated.environmentChangesRelaunch": true,
+
+  // Language Specific Formatters (Scoped properly)
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml",
+  },
+
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+
+  // Zen Mode Settings
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+
+  // Integrated Git Version Control
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.showActionButton": {
+    "commit": false,
+    "publish": false,
+    "sync": false,
+  },
+
+  // GitHub Copilot Engine
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": true,
+    "yaml": true,
+    "java": true,
+  },
+
+  // Target directory exclusions
+  "files.exclude": {
+    "**/.git": true,
+    "**/target": true,
+    "**/bin": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+  },
+
+  // Global Java Debug & Stepping Defaults
+  "java.completion.importOrder": ["java", "javax", "com", "org"],
+  "java.inlayHints.parameterNames.enabled": "all",
+  "java.debug.settings.console": "integratedTerminal",
+  "java.debug.settings.stepping.skipSynthetics": true,
+  "java.debug.settings.stepping.skipStaticInitializers": true,
+  "java.debug.settings.stepping.skipClasses": [
+    "java.**",
+    "javax.**",
+    "com.sun.**",
+    "sun.**",
+    "org.gradle.**",
+    "org.apache.maven.**",
+    "$JDK",
+    "$$JDK",
+    "$Libraries",
+    "java.lang.Thread",
+    "java.lang.ThreadGroup",
+    "java.lang.ClassLoader",
+    "java.util.concurrent.**",
+    "jdk.internal.**",
+    "sun.misc.**",
+  ],
+
+  "java.updateImportsOnPaste.enabled": true,
+  // High-Speed Auto-Build and Language Server Integrations
+  "java.autobuild.enabled": true,
+  "java.configuration.updateBuildConfiguration": "automatic",
+
+  // Cleaned VM Args (Add Lombok agent here if you use it in your build files)
+  "java.jdt.ls.vmargs": "-Xmx4G -XX:+UseG1GC",
+
+  // Maven Build Tool Scoping
+  "java.maven.downloadSources": true,
+  "maven.excludedFolders": ["**/.*", "**/node_modules", "**/target"],
+
+  // Misc Settings
+  "redhat.telemetry.enabled": false,
+  "chat.mcp.gallery.enabled": true,
+  "extensions.ignoreRecommendations": true,
+}

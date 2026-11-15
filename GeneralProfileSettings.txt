@@ -1,0 +1,95 @@
+{
+  // General UI & Window Settings
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+  "http.proxyStrictSSL": false,
+  "extensions.autoUpdate": "on",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "window.commandCenter": false,
+  "update.showReleaseNotes": false,
+
+  // Explorer Settings
+  "explorer.excludeGitIgnore": false,
+  "explorer.autoReveal": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // Workbench Layout & Themes
+  "workbench.colorTheme": "Dark+",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.useSplitJSON": true,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+
+  // Base Editor & Files Behavior
+  "editor.inlineSuggest.enabled": true,
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontWeight": "500",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestionsDelay": 100,
+  "files.autoSave": "onFocusChange",
+
+  // Debug & Terminal Blocks
+  "debug.console.fontFamily": "Source Code Pro",
+  "debug.toolBarLocation": "docked",
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.hideCondition": "never",
+  "terminal.integrated.tabs.location": "right",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.environmentChangesRelaunch": true,
+
+  // Document Formats & Markdown
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+  },
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+
+  // Zen Mode Settings
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+
+  // Integrated Git Version Control
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.showActionButton": {
+    "commit": false,
+    "publish": false,
+    "sync": false,
+  },
+
+  // GitHub Copilot Engine
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.newWorkspace.useContext7": true, // Kept raw typo parameter from source
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "scminput": true,
+    "yaml": true,
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
+  "chat.mcp.gallery.enabled": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://github.com/": true,
+    "https://raw.githubusercontent.com/": true,
+  },
+}
